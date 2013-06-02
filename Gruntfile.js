@@ -4,7 +4,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     clean: {
       release: 'release',
-      'release-media': ['release/media/js/*.js', '!release/media/js/app.js']
+      'release-media': ['release/media/css/*.css', '!release/media/css/app.css',
+                        'release/media/js/*.js', '!release/media/js/app.js']
     },
     copy: {
       release: {
@@ -26,6 +27,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-usemin');
 
-  grunt.registerTask('default', ['clean:release', 'copy', 'useminPrepare', 'concat', 'uglify', 'usemin', 'clean:release-media']);
+  grunt.registerTask('default', ['clean:release', 'copy', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 'clean:release-media']);
 };
 
