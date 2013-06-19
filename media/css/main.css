@@ -7,6 +7,10 @@ body {
   padding: 1em;
 }
 
+  .l-box img {
+    box-shadow: 2px 5px 15px #c0c0c0;
+  }
+
 .header {
   margin: 0 0;
 }
