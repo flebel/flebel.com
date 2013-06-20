@@ -71,6 +71,11 @@ body .primary-button {
   text-transform: uppercase;
 }
 
+  .content .content-subhead a {
+    color: #777;
+    text-decoration: none;
+  }
+
 .content .content-ribbon {
   border-bottom: 1px solid #eee;
   margin: 3em;
