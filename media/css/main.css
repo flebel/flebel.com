@@ -7,8 +7,20 @@ body {
   padding: 1em;
 }
 
+  .l-box h3 {
+    font-size: 90%;
+  }
+
+  .l-box h4 {
+    font-size: 95%;
+  }
+
   .l-box img {
     box-shadow: 2px 5px 15px #c0c0c0;
+  }
+
+  .l-box ul li {
+    font-size: 90%;
   }
 
 .header {
