@@ -3,5 +3,8 @@
   "version": "2.0.0",
   "dependencies": {
     "pure": "~0.2.0"
+  },
+  "devDependencies": {
+    "html-inspector": "~0.3.0"
   }
 }
