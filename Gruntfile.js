@@ -10,8 +10,20 @@ module.exports = function(grunt) {
     copy: {
       release: {
         files: {
-          'release/': ['index.html', 'media/**']
+          'release/': ['media/**']
         }
+      }
+    },
+    preprocess: {
+      options: {
+        context: {
+          DEBUG: false,
+          PROD: true
+        }
+      },
+      html: {
+        src: 'index.html',
+        dest: 'release/index.html'
       }
     },
     useminPrepare: {
@@ -26,7 +38,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-usemin');
+  grunt.loadNpmTasks('grunt-preprocess');
 
-  grunt.registerTask('default', ['clean:release', 'copy', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 'clean:release-media']);
+  grunt.registerTask('default', ['clean:release', 'copy', 'preprocess', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 'clean:release-media']);
 };
 
