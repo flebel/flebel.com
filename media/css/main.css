@@ -1,18 +1,27 @@
 body {
   line-height: 1.7em;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .l-box {
   padding: 1em;
 }
 
+  .l-box h1 {
+    font-size: 100%;
+  }
+
+  .l-box h2 {
+    font-size: 95%;
+  }
+
   .l-box h3 {
     font-size: 90%;
   }
 
   .l-box h4 {
-    font-size: 95%;
+    font-size: 85%;
   }
 
   .l-box img {
@@ -122,6 +131,16 @@ body .primary-button {
   margin: 3em;
 }
 
+.content .section-subhead {
+  border-bottom: 2px solid #eee;
+  color: #777;
+  display: inline-block;
+  font-family: 'Marmelad', cursive;
+  padding: 0 0 0.3em 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 .ribbon {
   background: #eee;
   color: #777;
@@ -132,4 +151,8 @@ body .primary-button {
     display: inline;
     font-weight: normal;
   }
+
+.section-ribbon {
+  padding-top: 20px;
+}
 
