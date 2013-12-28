@@ -31,12 +31,22 @@ module.exports = function(grunt) {
     },
     usemin: {
       html: 'release/index.html'
+    },
+    watch: {
+      scripts: {
+        files: ['index.html', 'media/**'],
+        tasks: ['default'],
+        options: {
+          interrupt: true,
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-compass');
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-preprocess');
 
